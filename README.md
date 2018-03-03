@@ -21,6 +21,6 @@ echo "{}" | ./bin/jpp
 
 #### quick shortcut for dev
 ```
-go build -o bin/jpp jpp.go && echo "{}" | ./bin/jpp
+go build -ldflags="-s -w" -o bin/jpp jpp.go && echo "{}" | ./bin/jpp
 ```
 

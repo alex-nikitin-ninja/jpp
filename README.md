@@ -4,4 +4,6 @@ the purpose is to make a high speed/throughput solution for pretty printing json
 
 How to build:
 
- go build jpp.go
+```
+go build jpp.go
+```

@@ -19,3 +19,8 @@ ex.:
 echo "{}" | ./bin/jpp
 ```
 
+#### quick shortcut for dev
+```
+go build -o bin/jpp jpp.go && echo "{}" | ./bin/jpp
+```
+

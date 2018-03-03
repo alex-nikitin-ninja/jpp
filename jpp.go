@@ -1,6 +1,3 @@
-// go run hello-world.go
-// go build hello-world.go
-
 package main
 
 import (
@@ -15,7 +12,7 @@ func main() {
 	rawJson, err := reader.ReadString('\n')
 
 	if err != nil {
-		fmt.Println("err:")
+		fmt.Println("Error:")
 		fmt.Print(err)
 		os.Exit(1)
 	} else {

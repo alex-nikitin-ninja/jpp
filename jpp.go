@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	reader := bufio.NewReader(os.Stdin)
 	rawJson, err := reader.ReadString('\n')
 
@@ -18,5 +17,4 @@ func main() {
 	} else {
 		fmt.Print(rawJson)
 	}
-
 }

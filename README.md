@@ -1,4 +1,4 @@
-# json-pretty-print (or jpp)
+### json-pretty-print (or jpp)
 
 "jpp" is an abbreviation from "json-pretty-print"
 

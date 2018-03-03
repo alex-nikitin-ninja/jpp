@@ -7,8 +7,15 @@ The purpose is to make a high speed/throughput solution for pretty printing json
 ### How to build
 
 ```
-go build jpp.go
+go build -o bin/jpp jpp.go
 ```
 
 ### How to use
+
+```
+echo "<your json here>" | ./bin/jpp
+
+ex.:
+echo "{}" | ./bin/jpp
+```
 

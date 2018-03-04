@@ -20,7 +20,7 @@ ex.:
 echo "{}" | ./bin/jpp
 ```
 
-#### quick shortcut for dev
+#### Quick shortcut for dev
 ```
 go build -ldflags="-s -w" -o bin/jpp jpp.go && echo "{}" | ./bin/jpp
 go build -ldflags="-s -w" -o bin/jpp jpp.go && echo "{abc:asdf,"a":{a:\"b{{\\\"{\",a:[\"[:[[\"],a:b}}" | ./bin/jpp

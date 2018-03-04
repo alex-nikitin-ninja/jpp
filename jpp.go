@@ -9,11 +9,13 @@ import (
 )
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
+	// TODO: all these should be modifiable via input args
 	indentSymbol := "    "
 	indentCurrent := 0
 	textOpen := false
-	prevChar := " "
+	prevChar := ""
+
+	reader := bufio.NewReader(os.Stdin)
 
 	indentKeys := map[string][]string{
 		"indent":        []string{"{", "["},
@@ -44,6 +46,9 @@ func main() {
 					fmt.Print(string(c) + "\n" + strings.Repeat(indentSymbol, indentCurrent))
 				} else if r, _ := in_array(string(c), indentKeys["unindent"]); r {
 					indentCurrent--
+					if indentCurrent < 0 {
+						indentCurrent = 0
+					}
 					fmt.Print("\n" + strings.Repeat(indentSymbol, indentCurrent) + string(c))
 				} else if r, _ := in_array(string(c), indentKeys["newLine"]); r {
 					fmt.Print(string(c) + "\n" + strings.Repeat(indentSymbol, indentCurrent))

@@ -15,8 +15,6 @@ func main() {
 	textOpen := false
 	prevChar := ""
 
-	reader := bufio.NewReader(os.Stdin)
-
 	indentKeys := map[string][]string{
 		"indent":        []string{"{", "["},
 		"unindent":      []string{"}", "]"},
@@ -24,6 +22,8 @@ func main() {
 		"space":         []string{":"},
 		"textEnclosure": []string{"\""},
 	}
+
+	reader := bufio.NewReader(os.Stdin)
 
 	for {
 		if c, _, err := reader.ReadRune(); err != nil {

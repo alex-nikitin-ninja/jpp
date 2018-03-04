@@ -1,8 +1,9 @@
 ### json-pretty-print (or jpp)
 
 "jpp" is an abbreviation from "json-pretty-print".\
-The purpose is to make a high speed/throughput solution for pretty printing json files in golang.\
-developed as a replacement for `python -mjson.tool`
+The purpose is to make a high speed/throughput solution with good memory usage
+written in golang for pretty printing .json files.\
+Developed as a replacement for `python -mjson.tool`
 
 
 ### How to build

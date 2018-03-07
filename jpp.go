@@ -63,6 +63,7 @@ func main() {
 			prevChar = string(c)
 		}
 	}
+	fmt.Print("\n")
 }
 
 func in_array(val string, inpArray []string) (ok bool, i int) {
